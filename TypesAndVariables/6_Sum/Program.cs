@@ -14,8 +14,7 @@ namespace _6_Sum
             for (int i = 0; i < input.Length; i++)
             {
                 numArr[i] = charArr[i];
-                sum += numArr[i] -48;
-                Console.WriteLine($"{i}-tais char ir {charArr[i]}, cipars {numArr[i]}, summa {sum} ");
+                sum += numArr[i] -48;                
             }
             Console.WriteLine(sum);
             Console.ReadKey();

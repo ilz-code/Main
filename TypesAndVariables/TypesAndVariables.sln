@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_TableOfClasses", "5_Table
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_Sum", "6_Sum\6_Sum.csproj", "{853A03A7-BB7F-4DAE-AD7C-2CBB73B2EEA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_UpperCaseLetters", "7_UpperCaseLetters\7_UpperCaseLetters.csproj", "{43722B4C-CCD0-4471-87FF-F1666341B524}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{853A03A7-BB7F-4DAE-AD7C-2CBB73B2EEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{853A03A7-BB7F-4DAE-AD7C-2CBB73B2EEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{853A03A7-BB7F-4DAE-AD7C-2CBB73B2EEA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43722B4C-CCD0-4471-87FF-F1666341B524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43722B4C-CCD0-4471-87FF-F1666341B524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43722B4C-CCD0-4471-87FF-F1666341B524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43722B4C-CCD0-4471-87FF-F1666341B524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
