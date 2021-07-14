@@ -1,0 +1,6 @@
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\SadFor\bin\Debug\SadFor.exe.config
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\SadFor\bin\Debug\SadFor.exe
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\SadFor\bin\Debug\SadFor.pdb
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\SadFor\obj\Debug\SadFor.csproj.CoreCompileInputs.cache
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\SadFor\obj\Debug\SadFor.exe
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\SadFor\obj\Debug\SadFor.pdb

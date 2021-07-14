@@ -1,0 +1,7 @@
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\VariablesAndNames\bin\Debug\VariablesAndNames.exe.config
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\VariablesAndNames\bin\Debug\VariablesAndNames.exe
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\VariablesAndNames\bin\Debug\VariablesAndNames.pdb
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\VariablesAndNames\obj\Debug\VariablesAndNames.csproj.AssemblyReference.cache
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\VariablesAndNames\obj\Debug\VariablesAndNames.csproj.CoreCompileInputs.cache
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\VariablesAndNames\obj\Debug\VariablesAndNames.exe
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\VariablesAndNames\obj\Debug\VariablesAndNames.pdb

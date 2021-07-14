@@ -1,0 +1,14 @@
+C:\Users\ilzep\Documents\GitHub\c-sharp-syllabus\csharp-basics\exercises\TypesAndVariables\Casting\bin\Debug\Casting.exe.config
+C:\Users\ilzep\Documents\GitHub\c-sharp-syllabus\csharp-basics\exercises\TypesAndVariables\Casting\bin\Debug\Casting.exe
+C:\Users\ilzep\Documents\GitHub\c-sharp-syllabus\csharp-basics\exercises\TypesAndVariables\Casting\bin\Debug\Casting.pdb
+C:\Users\ilzep\Documents\GitHub\c-sharp-syllabus\csharp-basics\exercises\TypesAndVariables\Casting\obj\Debug\Casting.csproj.AssemblyReference.cache
+C:\Users\ilzep\Documents\GitHub\c-sharp-syllabus\csharp-basics\exercises\TypesAndVariables\Casting\obj\Debug\Casting.csproj.CoreCompileInputs.cache
+C:\Users\ilzep\Documents\GitHub\c-sharp-syllabus\csharp-basics\exercises\TypesAndVariables\Casting\obj\Debug\Casting.exe
+C:\Users\ilzep\Documents\GitHub\c-sharp-syllabus\csharp-basics\exercises\TypesAndVariables\Casting\obj\Debug\Casting.pdb
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\Casting\bin\Debug\Casting.exe.config
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\Casting\bin\Debug\Casting.exe
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\Casting\bin\Debug\Casting.pdb
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\Casting\obj\Debug\Casting.csproj.AssemblyReference.cache
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\Casting\obj\Debug\Casting.csproj.CoreCompileInputs.cache
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\Casting\obj\Debug\Casting.exe
+C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\Casting\obj\Debug\Casting.pdb
