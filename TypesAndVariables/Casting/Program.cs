@@ -31,7 +31,10 @@ namespace Casting
             double d = 4.2;
             float e = 5.3f;
 
-            double sum = Math.Round( a + b + c + d + e, 1);
+            float dFloat = Convert.ToSingle(d);
+
+            float sum =  a + b + c + dFloat + e;
+            
             Console.WriteLine(sum);
         }
     }
