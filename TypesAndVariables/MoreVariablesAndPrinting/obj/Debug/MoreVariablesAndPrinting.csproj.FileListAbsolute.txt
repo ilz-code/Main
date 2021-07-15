@@ -1,7 +1,0 @@
-C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\MoreVariablesAndPrinting\bin\Debug\MoreVariablesAndPrinting.exe.config
-C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\MoreVariablesAndPrinting\bin\Debug\MoreVariablesAndPrinting.exe
-C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\MoreVariablesAndPrinting\bin\Debug\MoreVariablesAndPrinting.pdb
-C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\MoreVariablesAndPrinting\obj\Debug\MoreVariablesAndPrinting.csproj.AssemblyReference.cache
-C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\MoreVariablesAndPrinting\obj\Debug\MoreVariablesAndPrinting.csproj.CoreCompileInputs.cache
-C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\MoreVariablesAndPrinting\obj\Debug\MoreVariablesAndPrinting.exe
-C:\Users\ilzep\Documents\CODELEX\TypesAndVariables\MoreVariablesAndPrinting\obj\Debug\MoreVariablesAndPrinting.pdb
