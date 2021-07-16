@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{21B4C2ED-21D7-4F86-9A72-FCAD10DE578E}</ProjectGuid>
+    <ProjectGuid>{282A4E8D-34CA-47BE-B929-76C4B4E4E379}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GravityCalculator</RootNamespace>
-    <AssemblyName>GravityCalculator</AssemblyName>
+    <RootNamespace>Ex7_GravityCalc</RootNamespace>
+    <AssemblyName>Ex7-GravityCalc</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
