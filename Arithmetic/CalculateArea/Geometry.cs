@@ -6,21 +6,37 @@ using System.Threading.Tasks;
 
 namespace CalculateArea
 {
-    public class Geometry
+    class Geometry
     {
-        public static double areaOfCircle(decimal radius)
+        public static void calculateCircleArea()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("What is the circle's radius? ");
+            var keyboard = Console.ReadLine();
+            double.TryParse(keyboard, out var radius);
+            Console.WriteLine("The circle's area is "
+                + Math.Round(Math.PI * Math.Pow(radius, 2), 2));
         }
 
-        public static double areaOfRectangle(decimal length, decimal width)
+        public static void calculateRectangleArea()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Enter length? ");
+            decimal length = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("Enter width? ");
+            decimal width = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("The rectangle's area is " + length * width);
         }
 
-        public static double areaOfTriangle(decimal ground, decimal h)
+        public static void calculateTriangleArea()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Enter length of the triangle's base? ");
+            decimal ground = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("Enter triangle's height? ");
+            decimal height = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("The triangle's area is " + Math.Round((decimal)0.5 * ground * height, 2));
         }
     }
 }
