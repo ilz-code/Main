@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4-PrintDayInWord-if", "Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4-PrintDayInWord-switch", "Ex4-PrintDayInWord-switch\Ex4-PrintDayInWord-switch.csproj", "{B827DAEB-F606-473B-A10F-535E2D60FFD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5-PhoneKeyPad-if", "Ex5-PhoneKeyPad-if\Ex5-PhoneKeyPad-if.csproj", "{00D71032-9892-472F-90A3-A142183BEFEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5-PhoneKeyPadSwitch", "Ex5-PhoneKeyPadSwitch\Ex5-PhoneKeyPadSwitch.csproj", "{7C9A4827-2705-4419-B040-8303BB3DC334}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{B827DAEB-F606-473B-A10F-535E2D60FFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B827DAEB-F606-473B-A10F-535E2D60FFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B827DAEB-F606-473B-A10F-535E2D60FFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
