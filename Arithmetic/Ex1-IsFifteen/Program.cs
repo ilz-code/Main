@@ -11,16 +11,12 @@ namespace Ex1_IsFifteen
             int num2 = Convert.ToInt32(Console.ReadLine());
             
             bool isFifteen;
-            if (num1 == 15)
-                isFifteen = true;
-            else if (num2 == 15)
-                isFifteen = true;
-            else if (num1 + num2 == 15)
-                isFifteen = true;
-            else if (num1 - num2 == 15)
-                isFifteen = true;
-            else if (num2 - num1 == 15)
-                isFifteen = true;
+            if (num1 == 15 
+                || num2 == 15
+                || num1 + num2 == 15
+                || num1 - num2 == 15
+                || num2 - num1 == 15)
+                isFifteen = true;            
             else
                 isFifteen = false;
             Console.WriteLine(isFifteen);

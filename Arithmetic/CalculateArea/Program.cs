@@ -26,7 +26,7 @@ namespace CalculateArea
                     Geometry.calculateTriangleArea();
                     Console.ReadKey();
                 }
-                else if (choice == 4)
+                else 
                 {
                     Console.WriteLine("Thanks for calculating!");
                     Console.ReadKey();
