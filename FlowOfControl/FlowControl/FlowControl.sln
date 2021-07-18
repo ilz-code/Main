@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositiveNegativeNumber", "PositiveNegativeNumber\PositiveNegativeNumber.csproj", "{A2ABFE79-82C9-44CF-BF0A-A067DAA7A966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestNumber", "LargestNumber\LargestNumber.csproj", "{53E612A0-B352-4B2B-8942-5B7E7097AC4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenBillion", "TenBillion\TenBillion.csproj", "{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4-PrintDayInWord-if", "Ex4-PrintDayInWord-if\Ex4-PrintDayInWord-if.csproj", "{330C345C-AEBC-45E3-B67A-F0F3C4F23961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4-PrintDayInWord-switch", "Ex4-PrintDayInWord-switch\Ex4-PrintDayInWord-switch.csproj", "{B827DAEB-F606-473B-A10F-535E2D60FFD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5-PhoneKeyPad-if", "Ex5-PhoneKeyPad-if\Ex5-PhoneKeyPad-if.csproj", "{00D71032-9892-472F-90A3-A142183BEFEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5-PhoneKeyPadSwitch", "Ex5-PhoneKeyPadSwitch\Ex5-PhoneKeyPadSwitch.csproj", "{7C9A4827-2705-4419-B040-8303BB3DC334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2ABFE79-82C9-44CF-BF0A-A067DAA7A966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2ABFE79-82C9-44CF-BF0A-A067DAA7A966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2ABFE79-82C9-44CF-BF0A-A067DAA7A966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2ABFE79-82C9-44CF-BF0A-A067DAA7A966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E612A0-B352-4B2B-8942-5B7E7097AC4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E612A0-B352-4B2B-8942-5B7E7097AC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E612A0-B352-4B2B-8942-5B7E7097AC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E612A0-B352-4B2B-8942-5B7E7097AC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330C345C-AEBC-45E3-B67A-F0F3C4F23961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330C345C-AEBC-45E3-B67A-F0F3C4F23961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330C345C-AEBC-45E3-B67A-F0F3C4F23961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330C345C-AEBC-45E3-B67A-F0F3C4F23961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B827DAEB-F606-473B-A10F-535E2D60FFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B827DAEB-F606-473B-A10F-535E2D60FFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B827DAEB-F606-473B-A10F-535E2D60FFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B827DAEB-F606-473B-A10F-535E2D60FFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D71032-9892-472F-90A3-A142183BEFEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9A4827-2705-4419-B040-8303BB3DC334}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D10897BE-BB96-4A8C-9E4A-797DE25AE35F}
+	EndGlobalSection
+EndGlobal
