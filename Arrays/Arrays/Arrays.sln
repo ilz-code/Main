@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise6", "Exercise6\Exercise6.csproj", "{C1E18E14-AF54-45AB-999E-65931A08E52E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex8-Hangman", "Ex8-Hangman\Ex8-Hangman.csproj", "{97808CA4-D5DE-41F3-878E-BB15A636DEBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{C1E18E14-AF54-45AB-999E-65931A08E52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1E18E14-AF54-45AB-999E-65931A08E52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1E18E14-AF54-45AB-999E-65931A08E52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97808CA4-D5DE-41F3-878E-BB15A636DEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97808CA4-D5DE-41F3-878E-BB15A636DEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97808CA4-D5DE-41F3-878E-BB15A636DEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97808CA4-D5DE-41F3-878E-BB15A636DEBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
