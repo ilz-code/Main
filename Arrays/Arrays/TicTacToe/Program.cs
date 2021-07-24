@@ -5,10 +5,10 @@ namespace TicTacToe
     class Program
     {
         private static char[,] board = new char[3, 3];
-        private static int r;
-        private static int c;
-        private static char turn = 'X';
-        private static char outcome = ' ';
+        private static int _r;
+        private static int _c;
+        private static char _turn = 'X';
+        private static char _outcome = ' ';
         private static void Main(string[] args)
         {
             InitBoard();
@@ -21,15 +21,15 @@ namespace TicTacToe
                 Console.Clear();                            
                 DisplayBoard();
                 GetWinner();
-                if (i == 9 && outcome == ' ')
-                    outcome = 'T';
+                if (i == 9 && _outcome == ' ')
+                    _outcome = 'T';
             }
-            while (outcome == ' ');
+            while (_outcome == ' ');
 
-            if (turn == 'T')
+            if (_turn == 'T')
                 Console.WriteLine("The game is a tie.");
             else
-                Console.WriteLine($"{turn} win!");
+                Console.WriteLine($"{_turn} win!");
             Console.ReadKey();
         }
 
@@ -57,24 +57,24 @@ namespace TicTacToe
 
         private static void MakeTurn()
         {
-            turn = turn == 'X' ? 'O' : 'X';
+            _turn = _turn == 'X' ? 'O' : 'X';
             bool isCorrect = true;
             do
             {
                 isCorrect = true;
-                Console.WriteLine($"{turn} turn!");
+                Console.WriteLine($"{_turn} turn!");
                 Console.WriteLine("Enter row:");
-                r = Convert.ToInt32(Console.ReadLine());
+                _r = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter column:");
-                c = Convert.ToInt32(Console.ReadLine());
-                if (c > 2 || r > 2 || board[r, c] != ' ')
+                _c = Convert.ToInt32(Console.ReadLine());
+                if (_c > 2 || _r > 2 || board[_r, _c] != ' ')
                 {
                     Console.WriteLine("Incorrect input! Try again!");
                     isCorrect = false;
                 }
             }
             while (!isCorrect);
-            board[r, c] = turn;            
+            board[_r, _c] = _turn;            
         }
 
         private static void GetWinner()
@@ -87,7 +87,7 @@ namespace TicTacToe
              || (board[0, 2] == board[1, 2] && board[1, 2] == board[2, 2] && board[2, 2] != ' ')
              || (board[0, 0] == board[1, 1] && board[1, 1] == board[2, 2] && board[2, 2] != ' ')
              || (board[0, 2] == board[1, 1] && board[1, 1] == board[2, 0] && board[2, 0] != ' '))
-                outcome = turn;
+                _outcome = _turn;
         }
     }
 }
