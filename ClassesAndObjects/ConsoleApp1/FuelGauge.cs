@@ -1,10 +1,11 @@
-﻿namespace ConsoleApp1
+﻿using System;
+
+namespace ConsoleApp1
 {
     public class FuelGauge
     {
         private int _fuelLevel;
-        public int Level;
-        public int Fuel;
+
         public int ReportLevel()
         {
             return _fuelLevel;
@@ -18,7 +19,10 @@
 
         public void DecreaseLevel()
         {
-            _fuelLevel--;
+            if (_fuelLevel > 0)
+                _fuelLevel--;
+            else
+                Console.WriteLine("Fuel tank is empty!");
         }
     }
 }

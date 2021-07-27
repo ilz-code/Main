@@ -8,28 +8,28 @@ namespace EnergyDrinks
 {
     class Program
     {
-        private const int NumberedSurveyed = 12467;
+        private const double NumberSurveyed = 12467;
         private const double PurchasedEnergyDrinks = 0.14;
         private const double PreferCitrusDrinks = 0.64;
 
         private static void Main(string[] args)
         {
-            //fixme
-            /*
-             Console.WriteLine("Total number of people surveyed " + NumberedSurveyed);
-             Console.WriteLine("Approximately " + energyDrinkers + " bought at least one energy drink");
-             Console.WriteLine(preferCitrus + " of those " + "prefer citrus flavored energy drinks.");
-             */
+            Console.WriteLine("Total number of people surveyed " + NumberSurveyed);
+            Console.WriteLine("Approximately " + CalculateEnergyDrinkers(NumberSurveyed) + " bought at least one energy drink.");
+            Console.WriteLine(CalculatePreferCitrus(NumberSurveyed) + " of those " + "prefer citrus flavored energy drinks.");
+            Console.ReadKey();
         }
 
-        double CalculateEnergyDrinkers(int numberSurveyed)
+        public static int CalculateEnergyDrinkers(double numberSurveyed)
         {
-            throw new Exception("Sorry, no code written :(");
+            int energyDrinkers = Convert.ToInt32(Math.Round(NumberSurveyed * PurchasedEnergyDrinks));
+            return energyDrinkers;
         }
 
-        double CalculatePreferCitrus(int numberSurveyed)
+        public static int CalculatePreferCitrus(double numberSurveyed)
         {
-            throw new Exception("Sorry, no code written :(");
+            int preferCitrus = Convert.ToInt32(Math.Round(CalculateEnergyDrinkers(numberSurveyed) * PreferCitrusDrinks));
+            return preferCitrus;
         }
     }
 }
