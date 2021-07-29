@@ -11,33 +11,26 @@ namespace WordCount
     {
         static void Main(string[] args)
         {
-            string line;
-            try
+            var tex = File.ReadAllText("..\\..\\lear.txt");
+
+            Console.WriteLine(tex);
+            string[] lines = tex.Split('\n');
+            Console.WriteLine("Lines = " + lines.Length);
+
+            string[] words = tex.Split('\'', ' ', '\n');
+            Console.WriteLine("Words = " + words.Length);
+
+            char[] chars = tex.ToCharArray();
+            int count = 0;
+            foreach (char c in chars)
             {
-                 var tekst = File.ReadAllText("..\\..\\lear.txt");
-                //StreamReader sr = new StreamReader("..\\..\\lear.txt");
-                line = sr.ReadLine();
-
-                //C: \\Users\ilzep\Documents\GitHub\Main\Collections\WordCount\
-
-                //while (line != null)
-                //{
-                //write the lie to console window
-                Console.WriteLine(line);
-                //Read the next line
-                // line = sr.ReadLine();
-                // }
-
-                //sr.Close();
-                //string[] words = String.Split(" ",);
-                Console.ReadKey();
+                if (Char.IsLetterOrDigit(c))
+                    count++;
             }
-            finally
-            {
-                Console.WriteLine("xx");
-                Console.ReadKey();
-            }
+            Console.WriteLine("Chars = " + count);
+
             Console.ReadKey();
+
         }
     }
 }
