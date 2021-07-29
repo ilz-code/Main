@@ -21,13 +21,13 @@ namespace Dogs
           
         public string FathersName()
         {
-            string fn = Father.Name == null ? "Unknown" : Father.Name;
+            string fn = Father == null ? "Unknown" : Father.Name;
             return fn;
         }
 
         public bool HasSameMotherAs(Dog dog)
         {
-            this.Mother == dog.Mother;
+           return this.Mother == dog.Mother;
         }
 
     }

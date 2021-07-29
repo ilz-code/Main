@@ -10,21 +10,32 @@ namespace Account
     {
         private static void Main(string[] args)
         {
+            var firstAccount = new Account("First account", 100.00);
+            firstAccount.deposit(20);
+            firstAccount.balance();
+
+            var mat = new Account("Matt's account", 1000);
+            var my = new Account("My account", 0);
+            mat.withdrawal(100);
+            my.deposit(100);
+            mat.balance();
+            my.balance();
+
             var aAccount = new Account("A account", 100.00);
-            var bAccount = new Account("B account",0);
+            var bAccount = new Account("B account", 0);
             var cAccount = new Account("C Account", 0);
             Console.WriteLine("Initial state");
-            Console.WriteLine(aAccount);
-            Console.WriteLine(bAccount);
-            Console.WriteLine(cAccount);
+            aAccount.balance();
+            bAccount.balance();
+            cAccount.balance();
             aAccount.Name = "GGGG";
-            Transfer(aAccount,bAccount, 50.0);
-            Transfer(bAccount,cAccount, 25.0);
-            
+            Transfer(aAccount, bAccount, 50.0);
+            Transfer(bAccount, cAccount, 25.0);
+
             Console.WriteLine("Final state");
-            Console.WriteLine(aAccount);
-            Console.WriteLine(bAccount);
-            Console.WriteLine(cAccount);
+            aAccount.balance();
+            bAccount.balance();
+            cAccount.balance();
 
             Console.ReadKey();
         }

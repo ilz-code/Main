@@ -61,7 +61,7 @@ namespace VideoStore
                 int rating = Convert.ToInt16(Console.ReadLine());
 
                 _videoStore.AddVideo(movieName);
-                _videoStore.TakeUsersRating(rating, movieName);
+                _videoStore.TakeUsersRating(rating, movieName);               
             }
         }
 
@@ -76,7 +76,9 @@ namespace VideoStore
         {
             Console.WriteLine("Enter movie name");
             string movieName = Console.ReadLine();
-            _videoStore.ReturnVideo(movieName);
+            Console.WriteLine("Enter how you rate this movie");
+            double rating = Convert.ToDouble(Console.ReadLine());
+            _videoStore.ReturnVideo(movieName, rating);           
         }
     }
 }

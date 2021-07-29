@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1974620F-3645-4047-BDC3-F5F8EF154B9C}</ProjectGuid>
+    <ProjectGuid>{B2A50589-3186-48F1-BDDB-8BE3F0EAD9F2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SavingsAccount</RootNamespace>
-    <AssemblyName>SavingsAccount</AssemblyName>
+    <RootNamespace>SwapPoints</RootNamespace>
+    <AssemblyName>SwapPoints</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SavingsAccount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
