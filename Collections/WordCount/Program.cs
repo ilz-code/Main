@@ -1,9 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WordCount
 {
@@ -13,7 +9,6 @@ namespace WordCount
         {
             var tex = File.ReadAllText("..\\..\\lear.txt");
 
-            Console.WriteLine(tex);
             string[] lines = tex.Split('\n');
             Console.WriteLine("Lines = " + lines.Length);
 

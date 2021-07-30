@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ListExercise11
 {
@@ -10,19 +8,33 @@ namespace ListExercise11
     {
         static void Main(string[] args)
         {
-            //TODO: Create an List with string elements
+            List<string> flowers = new List<string>();
 
-            //TODO: Add 10 values to list
+            flowers.Add("rose");
+            flowers.Add("lily");
+            flowers.Add("daisy");
+            flowers.Add("hydrangea");
+            flowers.Add("sunflower");
+            flowers.Add("peony");
+            flowers.Add("narcissus");
+            flowers.Add("calendula");
+            flowers.Add("gladiolus");
+            flowers.Add("carnation");
 
-            //TODO: Add new value at 5th position
+            flowers.Insert(4, "violet");
 
-            //TODO: Change value at last position (Calculate last position programmatically)
+            flowers[flowers.Count()-1] = "swab";
 
-            //TODO: Sort your list in alphabetical order
+            flowers.Sort();
 
-            //TODO: Check if your list contains "Foobar" element
+            Console.WriteLine(flowers.Contains("Foobar"));
 
-            //TODO: Print each element of list using loop
+            for (int i = 0; i < flowers.Count(); i++)
+            {
+                Console.WriteLine(flowers[i]);
+            }
+
+            Console.ReadKey();
         }
     }
 }

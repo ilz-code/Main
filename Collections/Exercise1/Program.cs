@@ -8,7 +8,7 @@ namespace Exercise1
     {
         private static void Main(string[] args)
         {
-            string[] array = { "Audi", "BMW", "Honda", "Mercedes", "VolksWagen", "Tesla" };
+            string[] array = { "Audi", "BMW", "Honda", "Mercedes", "VolksWagen", "Mercedes", "Tesla" };
 
             var list = new List<string>();
             list = array.ToList<string>();
@@ -26,11 +26,11 @@ namespace Exercise1
             Dictionary<string, string> dict = new Dictionary<string, string>();
             for (int i = 0; i < arc.Length; i++)
             {
-                dict.Add(array[i], arc[i]);
+                dict.Add(hset.ElementAt(i), arc[i]);
             }           
             for(int i = 0; i < dict.Count; i++)
             {
-                Console.WriteLine($"{array[i]} is produced in {dict[array[i]]}");
+                Console.WriteLine($"{hset.ElementAt(i)} is produced in {dict[hset.ElementAt(i)]}");
             }
             Console.ReadKey();
         }
