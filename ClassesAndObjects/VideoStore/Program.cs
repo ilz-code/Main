@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace VideoStore
 {
     class Program
     {
-        private const int _countOfMovies = 3;
         private static VideoStore _videoStore = new VideoStore();
         private static void Main(string[] args)
         {
@@ -52,6 +48,9 @@ namespace VideoStore
 
         private static void FillVideoStore()
         {
+            int _countOfMovies;
+            Console.WriteLine("How many films you want to add?");
+            _countOfMovies = int.Parse(Console.ReadLine());
             for (var i = 0; i < _countOfMovies; i++)
             {
                 Console.WriteLine("Enter movie name");
@@ -61,7 +60,9 @@ namespace VideoStore
                 int rating = Convert.ToInt16(Console.ReadLine());
 
                 _videoStore.AddVideo(movieName);
-                _videoStore.TakeUsersRating(rating, movieName);               
+                _videoStore.TakeUsersRating(rating, movieName);
+
+                _videoStore.Save();
             }
         }
 
@@ -78,7 +79,7 @@ namespace VideoStore
             string movieName = Console.ReadLine();
             Console.WriteLine("Enter how you rate this movie");
             double rating = Convert.ToDouble(Console.ReadLine());
-            _videoStore.ReturnVideo(movieName, rating);           
+            _videoStore.ReturnVideo(movieName, rating);
         }
     }
 }

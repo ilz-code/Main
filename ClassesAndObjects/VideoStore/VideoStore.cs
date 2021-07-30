@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace VideoStore
 {
@@ -7,14 +9,30 @@ namespace VideoStore
     {
         List<Video> videos = new List<Video>();
 
+        //public VideoStore()
+        //{
+            
+        //}
+
         public VideoStore()
         {
+            if (File.Exists("movies.txt"))
+            {
+                var content = File.ReadAllText("movies.txt");
+                videos = JsonConvert.DeserializeObject<List<Video>>(content);
+            }
         }
 
         public void AddVideo(string title)
         {
             Video video = new Video(title);
             videos.Add(video);
+        }
+
+        public void Save ()
+        {
+            var videosList = JsonConvert.SerializeObject(videos);
+            File.WriteAllText("movies.txt", videosList);
         }
 
         public void Checkout(string title)
