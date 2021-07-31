@@ -6,13 +6,13 @@ namespace ConsoleApp1
 {
     public class Odometer
     {
+        private readonly FuelGauge _fuelGauge;
+        private int _currentMilage;
+
         public Odometer(FuelGauge fuelGauge)
         {
             _fuelGauge = fuelGauge;
-        }
-
-        private readonly FuelGauge _fuelGauge;
-        private int _currentMilage;
+        }        
 
         public int Report()
         {

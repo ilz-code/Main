@@ -13,18 +13,18 @@ namespace Account
             _money = v2;
         }
 
-        public double withdrawal(double i)
+        public double Withdrawal(double i)
         {
             _money -= i;
             return i;
         }
 
-        public void deposit(double i)
+        public void Deposit(double i)
         {
             _money += i;                       
         }
 
-        public void balance()
+        public void Balance()
         {
            Console.WriteLine(ToString());
         }

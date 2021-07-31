@@ -36,8 +36,7 @@ namespace VideoStore
         {
             Console.WriteLine("times rated" + TimesRated);
             Rating = (Rating * TimesRated + rating) / (++TimesRated);
-            Console.WriteLine("times rated" + TimesRated);
-            //TimesRated++;
+            Console.WriteLine("times rated" + TimesRated);            
             return Rating;
         }
               

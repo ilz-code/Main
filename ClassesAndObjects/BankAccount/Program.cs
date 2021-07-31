@@ -16,25 +16,25 @@ namespace BankAccount
         }
     }
 
-    public class Account
+    class Account
     {
-        public string Name;
-        public double Balance;
+        private string _name;
+        private double _balance;
 
         public Account(string name, double balance)
         {
-            Name = name;
-            Balance = balance;
+            _name = name;
+            _balance = balance;
         }
 
         public string ShowUserNameAndBalance()
         {
-            if (Balance < 0)
+            if (_balance < 0)
             {
-                Balance = Math.Abs(Balance);
-                return $"{Name}, -${Balance:0.00}";
+                _balance = Math.Abs(_balance);
+                return $"{_name}, -${_balance:0.00}";
             }
-            return $"{Name}, ${Balance:0.00}";
+            return $"{_name}, ${_balance:0.00}";
         }
     }
 }

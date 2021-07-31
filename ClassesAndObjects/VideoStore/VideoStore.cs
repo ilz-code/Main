@@ -9,11 +9,6 @@ namespace VideoStore
     {
         List<Video> videos = new List<Video>();
 
-        //public VideoStore()
-        //{
-            
-        //}
-
         public VideoStore()
         {
             if (File.Exists("movies.txt"))
