@@ -1,8 +1,10 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace DragRace
 {
-    public class Bmw: ICar
+    class Mercedes : ICar, IAdvancedCar
     {
         public int CurrentSpeed { get; set; }
         public int Acceleration { get; set; }
@@ -10,20 +12,20 @@ namespace DragRace
         public string Name { get; set; }
         public int Place { get; set; }
 
-        public Bmw(string name, int speed, int acceleration)
+        public Mercedes(string name, int speed, int accel)
         {
             CurrentSpeed = speed;
-            Acceleration = acceleration;
+            Acceleration = accel;
             Name = name;
             Location = 0;
         }
 
-        public void SpeedUp() 
+        public void SpeedUp()
         {
             CurrentSpeed += Acceleration;
         }
 
-        public void SlowDown() 
+        public void SlowDown()
         {
             if (CurrentSpeed > Acceleration)
             {
@@ -31,14 +33,19 @@ namespace DragRace
             }
         }
 
-        public int ShowCurrentSpeed() 
+        public int ShowCurrentSpeed()
         {
             return CurrentSpeed;
         }
 
-        public void StartEngine() 
+        public void StartEngine()
         {
             Console.WriteLine("Rrrrrrr.....");
+        }
+
+        public void UseNitrousOxideEngine()
+        {
+            CurrentSpeed += 2 * Acceleration;
         }
     }
 }
