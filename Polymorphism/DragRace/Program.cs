@@ -52,7 +52,7 @@ namespace DragRace
                 int time = 4;
                 int occasion;
                 int times;
-                int i = 0;                
+                int i = 0;
 
                 foreach (ICar car in cars)
                 {
@@ -64,8 +64,11 @@ namespace DragRace
                         if (occasion < 2)
                         {
                             car.SpeedUp();
-                            //if (occasion == 0)
-                            //  car.UseNitrousOxideEngine();
+                            if (occasion == 0)
+                            {
+                                if (car is IAdvancedCar adv)
+                                    adv.UseNitrousOxideEngine();
+                            }
                         }
                         else
                             car.SlowDown();
@@ -80,7 +83,7 @@ namespace DragRace
                     Finisher finisher = new Finisher(car.Name, times, car.Location);
                     finishers.Add(finisher);
                 }
-                return distance;               
+                return distance;
             }
 
             void Visualisation()
@@ -97,7 +100,7 @@ namespace DragRace
                 Console.WriteLine();
                 foreach (ICar car in cars)
                 {
-                    Console.WriteLine("| " + car.Name + new string(' ', distance) +"|");                    
+                    Console.WriteLine("| " + car.Name + new string(' ', distance) + "|");
                 }
 
                 int maxTimes = 0;
@@ -134,8 +137,8 @@ namespace DragRace
                 Console.WriteLine();
 
                 foreach (Finisher car in sortedFinishers)
-                    car.Time = car.Time * 4 - (car.Distance - distance) / 8;               
-                
+                    car.Time = car.Time * 4 - (car.Distance - distance) / 8;
+
                 int place = 1;
                 Thread.Sleep(2000);
                 foreach (Finisher car in sortedFinishers)
@@ -147,7 +150,7 @@ namespace DragRace
 
 
 
-            Competition();            
+            Competition();
             Visualisation();
             Results();
 
