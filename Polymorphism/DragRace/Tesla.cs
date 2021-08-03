@@ -37,7 +37,7 @@ namespace DragRace
 
         public void StartEngine() 
         {
-            Console.WriteLine("-- silence ---");
+            Console.WriteLine("-- silence --");
         }
     }
 }
