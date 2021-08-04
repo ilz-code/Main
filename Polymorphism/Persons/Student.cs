@@ -6,12 +6,8 @@ namespace Persons
     {
         double Gpa { get; set; }
 
-        public Student(string name, string lastName, string address, int id, double gpa) 
+        public Student(string name, string lastName, string address, int id, double gpa) : base(name, lastName, address, id)
         {
-            FirstName = name;
-            LastName = lastName;
-            Address = address;
-            Id = id;
             Gpa = gpa;
         }
 
