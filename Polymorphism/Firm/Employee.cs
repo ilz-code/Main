@@ -1,5 +1,3 @@
-using System;
-
 namespace Firm
 {
     public class Employee : StaffMember

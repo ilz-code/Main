@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace Firm
+﻿namespace Firm
 {
     class Program
-    {        
+    {    
         private static void Main(string[] args)
         {
             var personnel = new Staff();
