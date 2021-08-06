@@ -6,13 +6,13 @@ namespace AdApp
     {
         private static void Main(string[] args)
         {
-            var c = new Campaign();
-            c.AddAdvert(new Advert(1000));
-            //c.AddAdvert(new Hoarding(500, 7, 200));
-            //c.AddAdvert(new NewspaperAd(0, 30, 20));
-            //c.AddAdvert(new TVAd(50000, 1000, 30, true));
-            Console.WriteLine(c);
-
+            var camp = new Campaign();
+            camp.AddAdvert(new Hoarding(200, 50, 6, true));
+            camp.AddAdvert(new NewspaperAd(100, 9, 30));
+            camp.AddAdvert(new TVAd(300, 60, 15, true));
+            camp.AddAdvert(new Poster(100, 20, 30, 100, 0.0015));
+            Console.WriteLine(camp.ToString());
+            
             Console.ReadKey();
         }
     }
