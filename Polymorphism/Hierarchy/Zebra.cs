@@ -31,5 +31,10 @@ namespace Hierarchy
             Console.Write("\n Zebra ");
             base.Output();
         }
+
+        public override string ToString()
+        {
+            return "Zebra" + base.ToString() + $", {_foodEaten}]";
+        }
     }
 }

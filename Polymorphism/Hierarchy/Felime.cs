@@ -18,5 +18,10 @@ namespace Hierarchy
         {
             base.Output();
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

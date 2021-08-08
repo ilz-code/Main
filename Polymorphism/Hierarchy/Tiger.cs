@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Hierarchy
 {
@@ -30,6 +28,11 @@ namespace Hierarchy
         {
             Console.Write("\n Tiger ");
             base.Output();
+        }
+
+        public override string ToString()
+        {
+            return "Tiger" + base.ToString() + $", {_foodEaten}]";
         }
     }
 }

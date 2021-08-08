@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Hierarchy
 {
@@ -23,6 +21,11 @@ namespace Hierarchy
         {
             base.Output();
             Console.Write(_livingRegion);
+        }
+
+        public override string ToString()
+        {
+            return $"[{_name}, {_weight}, {_livingRegion}";
         }
     }
 }

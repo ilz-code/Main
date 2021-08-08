@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
     abstract class Food
     {

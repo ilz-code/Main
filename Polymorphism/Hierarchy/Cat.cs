@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Hierarchy
 {
@@ -28,6 +26,11 @@ namespace Hierarchy
             Console.Write("\n Cat ");
             base.Output();
             Console.Write(" " + _breed);
+        }
+
+        public override string ToString()
+        {
+            return $"Cat[{_name}, {_breed}, {_weight}, {_livingRegion}, {_foodEaten}]";
         }
     }
 }

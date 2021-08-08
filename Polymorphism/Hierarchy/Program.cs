@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Hierarchy
 {
@@ -33,27 +32,12 @@ namespace Hierarchy
 
                 Animal animal = null;
                 Type animalClassType = Type.GetType($"Hierarchy.{animalType}", true);
-
-                Activator.CreateInstance(animalClassType, name, weight, region);
+                if (animalType == "Cat")
+                    animal = (Animal)Activator.CreateInstance(animalClassType, name, weight, region, breed);
+                else
+                    animal = (Animal)Activator.CreateInstance(animalClassType, name, weight, region);
+                animals.Add(animal);
                 
-                //
-                //switch (animalType)
-                //{
-                //    case "Cat":
-                //        animal = new Cat(name, weight, region, breed);
-                //        break;
-                //    case "Zebra":
-                //        animal = new Zebra(name, weight, region);
-                //        break;
-                //    case "Mouse":
-                //        animal = new Mouse(name, weight, region);
-                //        break;
-                //    case "Tiger":
-                //        animal = new Tiger(name, weight, region);
-                //        break;
-                //}
-                //animals.Add(animal);
-
                 animal.Output();
                 animal.MakeSound();
 
@@ -71,14 +55,13 @@ namespace Hierarchy
                         eat = new Vegetables(quantity);
                         break;
                 }
-
-                animal.Eat(eat);                
+                animal.Eat(eat);
             }
 
             Console.WriteLine();
             foreach (Animal animal in animals)
             {
-               // Console.WriteLine(JsonConvert.SerializeObject(animal));
+                Console.WriteLine(animal.ToString());
             }
 
             Console.ReadKey();
