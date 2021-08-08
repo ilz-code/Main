@@ -32,22 +32,27 @@ namespace Hierarchy
                     breed = "";
 
                 Animal animal = null;
-                switch (animalType)
-                {
-                    case "Cat":
-                        animal = new Cat(name, weight, region, breed);
-                        break;
-                    case "Zebra":
-                        animal = new Zebra(name, weight, region);
-                        break;
-                    case "Mouse":
-                        animal = new Mouse(name, weight, region);
-                        break;
-                    case "Tiger":
-                        animal = new Tiger(name, weight, region);
-                        break;
-                }
-                animals.Add(animal);
+                Type animalClassType = Type.GetType($"Hierarchy.{animalType}", true);
+
+                Activator.CreateInstance(animalClassType, name, weight, region);
+                
+                //
+                //switch (animalType)
+                //{
+                //    case "Cat":
+                //        animal = new Cat(name, weight, region, breed);
+                //        break;
+                //    case "Zebra":
+                //        animal = new Zebra(name, weight, region);
+                //        break;
+                //    case "Mouse":
+                //        animal = new Mouse(name, weight, region);
+                //        break;
+                //    case "Tiger":
+                //        animal = new Tiger(name, weight, region);
+                //        break;
+                //}
+                //animals.Add(animal);
 
                 animal.Output();
                 animal.MakeSound();
