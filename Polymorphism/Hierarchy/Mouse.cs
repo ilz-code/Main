@@ -6,20 +6,30 @@ namespace Hierarchy
 {
     class Mouse : Mammal
     {
-        public Mouse(string name, int weight, string livingRegion) : base(name, weight, livingRegion)
+        public Mouse(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         { }
 
         public override void MakeSound()
         {
-            Console.WriteLine("Squeak");
+            Console.WriteLine("\n Squeak");
         }
 
-        public override void Eat(Food food, int quantity)
+        public override void Eat(Food food)
         {
             if (food is Vegetables)
-                base.Eat(food, quantity);
+                base.Eat(food);
             else
-                Console.WriteLine("Mouses are not eating that type of food!");
+            {
+                base.Eat(food);
+                Console.WriteLine(" Mouses are not eating that type of food!");
+                _foodEaten = 0;
+            }
+        }
+
+        public override void Output()
+        {
+            Console.Write("\n Mouse ");
+            base.Output();
         }
     }
 }

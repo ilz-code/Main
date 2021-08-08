@@ -6,12 +6,17 @@ namespace Hierarchy
 {
     abstract class Felime : Mammal
     {
-        public Felime(string name, int weight, string livingRegion) : base(name, weight, livingRegion)
+        public Felime(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         { }
 
-        public override void Eat(Food food, int quantity)
+        public override void Eat(Food food)
         {
-            base.Eat(food, quantity);
+            base.Eat(food);
+        }
+
+        public override void Output()
+        {
+            base.Output();
         }
     }
 }

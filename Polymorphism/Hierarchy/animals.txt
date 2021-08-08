@@ -1,9 +1,9 @@
-Zebra Klaudy 373.3 Africa
+Zebra Klaudy 373,6 Africa
 Vegetables 27000
-Mouse Betty 23.7 World
+Mouse Betty 0,23 World
 Vegetables 5
-Cat Billy 3.7 World Mainkoon
+Cat Billy 3,7 World Mainkoon
 Meat 30
-Tiger King 432.7 Asia
+Tiger King 432,9 Asia
 Vegetables 50
 end

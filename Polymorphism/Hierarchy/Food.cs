@@ -6,7 +6,8 @@ namespace Hierarchy
 {
     abstract class Food
     {
-        private int _quantity;       
+        public int Quantity;
+        public string Name;
 
         public Food()
         {
@@ -15,7 +16,7 @@ namespace Hierarchy
 
         public Food(int quantity)
         {
-            _quantity = quantity;
+            Quantity = quantity;
         }
     }
 }

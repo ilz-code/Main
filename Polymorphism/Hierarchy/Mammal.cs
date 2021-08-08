@@ -6,16 +6,23 @@ namespace Hierarchy
 {
     abstract class Mammal : Animal
     {
-        private string _livingRegion;
+        public string _livingRegion;
 
-        public Mammal(string name, int weight, string livingRegion) : base(name, weight)
+        public Mammal(string name, double weight, string livingRegion) : base(name, weight)
         {
             _livingRegion = livingRegion;
         }
 
-        public override void Eat(Food food, int quantity)
+        public override void Eat(Food food)
         {
-            base.Eat(food, quantity);
+            base.Eat(food);
+            Console.WriteLine(" " + food.Name + " " + food.Quantity);
+        }
+
+        public override void Output()
+        {
+            base.Output();
+            Console.Write(_livingRegion);
         }
     }
 }

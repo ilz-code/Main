@@ -6,9 +6,9 @@ namespace Hierarchy
 {
     abstract class Animal
     {
-        private string _name;
-        private double _weight;
-        private int _foodEaten;
+        public string _name;
+        public double _weight;
+        public int _foodEaten;
 
         public Animal()
         { }
@@ -23,9 +23,14 @@ namespace Hierarchy
         public virtual void MakeSound()
         { }
 
-        public virtual void Eat(Food food, int quantity)
+        public virtual void Eat(Food food)
         {
-            _foodEaten = quantity;
+            _foodEaten = food.Quantity;
+        }
+
+        public virtual void Output()
+        {
+            Console.Write($" {_name} {_weight} ");
         }
     }
 }

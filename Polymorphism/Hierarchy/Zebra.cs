@@ -6,20 +6,30 @@ namespace Hierarchy
 {
     class Zebra : Mammal
     {
-        public Zebra(string name, int weight, string livingRegion) : base(name, weight, livingRegion)
+        public Zebra(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         { }
 
         public override void MakeSound()
         {
-            Console.WriteLine("Click");
+            Console.WriteLine("\n Click");
         }
 
-        public override void Eat(Food food, int quantity)
+        public override void Eat(Food food)
         {
             if (food is Vegetables)
-                base.Eat(food, quantity);
+                base.Eat(food);
             else
-                Console.WriteLine("Zebras are not eating that type of food!");
+            {
+                base.Eat(food);
+                Console.WriteLine(" Zebras are not eating that type of food!");
+                _foodEaten = 0;
+            }
+        }
+
+        public override void Output()
+        {
+            Console.Write("\n Zebra ");
+            base.Output();
         }
     }
 }
