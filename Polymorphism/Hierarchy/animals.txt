@@ -6,4 +6,3 @@ Cat Billy 3.7 World Mainkoon
 Meat 30
 Tiger King 432.9 Asia
 Vegetables 50
-end

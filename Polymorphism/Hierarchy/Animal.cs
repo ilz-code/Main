@@ -6,7 +6,7 @@ namespace Hierarchy
     {
         public string _name;
         public double _weight;
-        public int _foodEaten;
+        public int _foodEaten;        
 
         public Animal()
         { }
@@ -18,8 +18,7 @@ namespace Hierarchy
             _foodEaten = 0;
         }
 
-        public virtual void MakeSound()
-        { }
+        public virtual void MakeSound() { }
 
         public virtual void Eat(Food food)
         {

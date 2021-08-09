@@ -5,7 +5,8 @@
         double _totalSales;
         double _commissionRate;
 
-        public Commission(string name, string address, string phone, string securityNumber, double hourlyRate, double commissionRate) : base( name, address, phone, securityNumber, hourlyRate)
+        public Commission(string name, string address, string phone, string securityNumber, double hourlyRate, double commissionRate) 
+            : base( name, address, phone, securityNumber, hourlyRate)
         {
             _commissionRate = commissionRate;
         }

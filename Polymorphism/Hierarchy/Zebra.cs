@@ -15,7 +15,7 @@ namespace Hierarchy
         }
 
         public override void Eat(Food food)
-        {
+        {            
             if (food is Vegetables)
                 base.Eat(food);
             else
