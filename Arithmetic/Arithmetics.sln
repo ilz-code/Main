@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex7-GravityCalc", "Ex7-Grav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex9-BMI", "Ex9-BMI\Ex9-BMI.csproj", "{5908A252-3FC3-4E62-BC3A-99C378C0C21D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1_IsFifteenTests", "Ex1_IsFifteenTests\Ex1_IsFifteenTests.csproj", "{70290F86-301C-48EA-8877-EB6C24B0132B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex2_CheckOddEvenTests", "Ex2_CheckOddEvenTests\Ex2_CheckOddEvenTests.csproj", "{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{5908A252-3FC3-4E62-BC3A-99C378C0C21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5908A252-3FC3-4E62-BC3A-99C378C0C21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5908A252-3FC3-4E62-BC3A-99C378C0C21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70290F86-301C-48EA-8877-EB6C24B0132B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70290F86-301C-48EA-8877-EB6C24B0132B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70290F86-301C-48EA-8877-EB6C24B0132B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70290F86-301C-48EA-8877-EB6C24B0132B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
