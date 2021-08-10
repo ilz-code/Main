@@ -6,8 +6,6 @@ namespace DragRace
 {
     interface IAdvancedCar
     {
-        public void UseNitrousOxideEngine()
-        {
-        }
+        public void UseNitrousOxideEngine();
     }
 }

@@ -6,26 +6,26 @@ namespace DragRace
 {
     interface ICar
     {
-        public int CurrentSpeed { get; set; }
-        public int Acceleration { get; set; }
-        public int Location { get; set; }
-        public string Name { get; set; }
-        public int Place { get; set; }
-        public void SpeedUp()
+        int CurrentSpeed { get; set; }
+        int Acceleration { get; set; }
+        int Location { get; set; }
+        string Name { get; set; }
+        int Place { get; set; }
+        void SpeedUp()
         {
             CurrentSpeed += Acceleration;
         }
 
-        public void SlowDown()
+        void SlowDown()
         {
             CurrentSpeed -= Acceleration;
         }
 
-        public int ShowCurrentSpeed()
+        int ShowCurrentSpeed()
         {
             return CurrentSpeed;
         }
 
-        public void StartEngine();
+        void StartEngine();
     }
 }
