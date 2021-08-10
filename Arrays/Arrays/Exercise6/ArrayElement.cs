@@ -15,17 +15,26 @@ namespace Exercise6
             Random rnd = new Random();
             for (int i = 0; i < 10; i++)
                 firstArray[i] = rnd.Next(100);
-
-            firstArray[9] = -7;
-
             return firstArray;
-
         }
 
-        public int FindElement(int[] firstArray, int ind)
+        public static int[] CopyArray(int[] firstArray)
+        {
+            int[] secondArray = new int[10];
+            for (int i = 0; i < 10; i++)
+            secondArray[i] = firstArray[i];
+            return secondArray;
+        }
+
+        public static int[] ChangeArray(int[] firstArray)
+        {
+            firstArray[9] = -7;
+            return firstArray;
+        }        
+
+        public static int FindElement(int[] firstArray, int ind)
         {
             return firstArray[ind];
-        }     
-
+        }  
     }
 }
