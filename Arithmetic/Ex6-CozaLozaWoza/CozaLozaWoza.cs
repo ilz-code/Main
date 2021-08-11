@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex6_CozaLozaWoza
 {
-    class CozaLozaWoza
+    public class CozaLozaWoza
     {
         public static string CozaLoza(int i)
         {

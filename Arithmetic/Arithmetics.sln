@@ -27,6 +27,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1_IsFifteenTests", "Ex1_I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex2_CheckOddEvenTests", "Ex2_CheckOddEvenTests\Ex2_CheckOddEvenTests.csproj", "{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex6_CozaLozaWozaTests", "Ex6_CozaLozaWozaTests\Ex6_CozaLozaWozaTests.csproj", "{D72E585D-EE73-428C-B4D0-F926C09A5E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex7_GravityCalcTests", "Ex7_GravityCalculatorTests\Ex7_GravityCalcTests.csproj", "{7D4217B1-AFE4-4EF8-BA97-59CEF663FDDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex8_EmployeePayTests", "Ex8_EmployeePayTests\Ex8_EmployeePayTests.csproj", "{66FD6C85-0D95-48B9-A29A-E301768693FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_CalculateAreaTests", "Ex10_CalculateAreaTests\Ex10_CalculateAreaTests.csproj", "{A203070C-54DE-4D49-BE25-A0217055DAEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +89,22 @@ Global
 		{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26506D64-CB8B-49DC-948D-8C58C6AEEB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72E585D-EE73-428C-B4D0-F926C09A5E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72E585D-EE73-428C-B4D0-F926C09A5E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72E585D-EE73-428C-B4D0-F926C09A5E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72E585D-EE73-428C-B4D0-F926C09A5E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4217B1-AFE4-4EF8-BA97-59CEF663FDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4217B1-AFE4-4EF8-BA97-59CEF663FDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4217B1-AFE4-4EF8-BA97-59CEF663FDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4217B1-AFE4-4EF8-BA97-59CEF663FDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66FD6C85-0D95-48B9-A29A-E301768693FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66FD6C85-0D95-48B9-A29A-E301768693FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66FD6C85-0D95-48B9-A29A-E301768693FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66FD6C85-0D95-48B9-A29A-E301768693FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A203070C-54DE-4D49-BE25-A0217055DAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A203070C-54DE-4D49-BE25-A0217055DAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A203070C-54DE-4D49-BE25-A0217055DAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A203070C-54DE-4D49-BE25-A0217055DAEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

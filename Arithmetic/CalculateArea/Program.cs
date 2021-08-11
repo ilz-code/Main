@@ -9,22 +9,30 @@ namespace CalculateArea
             int choice; 
             do
             {                
-                choice = getMenu();
+                choice = GetMenu();
 
                 if (choice == 1)
                 {
-                    Geometry.calculateCircleArea();
-                    Console.ReadKey();
+                    Console.WriteLine("What is the circle's radius? ");
+                    var keyboard = Console.ReadLine();
+                    double.TryParse(keyboard, out var radius);
+                    Console.WriteLine("The circle's area is " + Geometry.CalculateCircleArea(radius));
                 }
                 else if (choice == 2)
                 {
-                    Geometry.calculateRectangleArea();
-                    Console.ReadKey();
+                    Console.WriteLine("Enter length? ");
+                    decimal length = Convert.ToDecimal(Console.ReadLine());
+                    Console.WriteLine("Enter width? ");
+                    decimal width = Convert.ToDecimal(Console.ReadLine());
+                    Console.WriteLine("The rectangle's area is " + Geometry.CalculateRectangleArea(length, width));
                 }
                 else if (choice == 3)
                 {
-                    Geometry.calculateTriangleArea();
-                    Console.ReadKey();
+                    Console.WriteLine("Enter length of the triangle's base? ");
+                    decimal ground = Convert.ToDecimal(Console.ReadLine());
+                    Console.WriteLine("Enter triangle's height? ");
+                    decimal height = Convert.ToDecimal(Console.ReadLine());
+                    Console.WriteLine("The triangle's area is " + Geometry.CalculateTriangleArea(ground, height));
                 }
                 else 
                 {
@@ -35,7 +43,7 @@ namespace CalculateArea
             } while (choice != 4);
         }
 
-        public static int getMenu()
+        public static int GetMenu()
         {
             int userChoice;            
             
