@@ -15,9 +15,9 @@ namespace DateTest
             Day = day;
         }
 
-        public void DisplayData()
+        public string DisplayData()
         {
-            Console.WriteLine($"{Day}/{Month}/{Year}");
+            return $"{Day}/{Month}/{Year}";
         }
     }
 }

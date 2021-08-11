@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Products
 {
-    class Product
+    public class Product
     {
         string name;
         double price;
@@ -19,19 +19,21 @@ namespace Products
             this.amount = amountAtStart;
         }
 
-        public void PrintProduct()
+        public string PrintProduct()
         {
-            Console.WriteLine($"{name}, price {price}, amount {amount}");
+           return $"{name}, price {price}, amount {amount}";
         }
 
-        public void ChangeQuantity(int quantityChanges)
+        public int ChangeQuantity(int quantityChanges)
         {
             amount += quantityChanges;
+            return amount;
         }
 
-        public void ChangePrice(double priceChanges)
+        public double ChangePrice(double priceChanges)
         {
             price += priceChanges;
+            return price;
         }
     }
 }
