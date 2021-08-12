@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DragRace
 {
-    interface ICar
+    public interface ICar
     {
         int CurrentSpeed { get; set; }
         int Acceleration { get; set; }

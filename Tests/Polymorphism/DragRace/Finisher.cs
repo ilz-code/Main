@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DragRace
+﻿namespace DragRace
 {
-    class Finisher
+    public class Finisher
     {
         public string Name { get; set; }
         public double Time { get; set; }
