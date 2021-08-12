@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Phonebook
 {
     class Program
     {
+        static string name = "";
+        static string number;
+
         static void Main(string[] args)
         {
-            string name = "";
-            string number;
-            SortedDictionary<string, string> phones = new SortedDictionary<string, string>();
-            
             int choose;
             do
             {
@@ -26,21 +24,13 @@ namespace Phonebook
                         AddNumber();
                         break;
                 }
-            }
-            while (choose != 0);
+            } while (choose != 0);
 
             void FindNumber()
             {
-                try
-                {
-                    Console.WriteLine("Enter name:");
-                    name = Console.ReadLine();
-                    Console.WriteLine(phones[name]);
-                }
-                catch (KeyNotFoundException)
-                {
-                    Console.WriteLine($"Name {name} is not found.");
-                }                
+                Console.WriteLine("Enter name:");
+                name = Console.ReadLine();
+                Console.WriteLine(PhoneBook.Finder(name));
             }
 
             void AddNumber()
@@ -51,14 +41,7 @@ namespace Phonebook
                 number = Console.ReadLine();
                 if (number.Length != 8)
                     Console.WriteLine("Number must consist from 8 digits!");
-                try
-                {
-                    phones.Add(name, number);
-                }
-                catch (ArgumentException)
-                {
-                    Console.WriteLine($"Name {name} already exists.");
-                }                   
+                Console.WriteLine(PhoneBook.Adder(name, number));
             }
         }
     }
