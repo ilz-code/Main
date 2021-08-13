@@ -10,8 +10,6 @@ namespace DragRace
 
         public static List<ICar> MakeCarsList()
         {
-            
-
             Mercedes mercee = new Mercedes("M", 0, 2);
             cars.Add(mercee);
 

@@ -9,7 +9,9 @@ namespace DragRaceTests
         [TestMethod]
         public void MakeCarsList_cars()
         {
-
+            int result = Dragrace.MakeCarslist().Count;
+            int expect = 6;
+            Assert.AreEqual(expect, result);
         }
     }
 }
