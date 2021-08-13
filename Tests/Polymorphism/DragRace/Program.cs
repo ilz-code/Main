@@ -68,7 +68,7 @@ namespace DragRace
                     car.StartEngine();
                 }
 
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
                 Console.Clear();
                 Console.WriteLine();
                 foreach (ICar car in cars)
