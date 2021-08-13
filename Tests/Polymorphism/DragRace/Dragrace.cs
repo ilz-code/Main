@@ -6,9 +6,11 @@ namespace DragRace
 {
     public class Dragrace
     {
-        public static int MakeCarsList()
+        public static List<ICar> cars = new List<ICar>();
+
+        public static List<ICar> MakeCarsList()
         {
-            List<ICar> cars = new List<ICar>();
+            
 
             Mercedes mercee = new Mercedes("M", 0, 2);
             cars.Add(mercee);
@@ -27,7 +29,7 @@ namespace DragRace
 
             Audi audy = new Audi("A", 0, 2);
             cars.Add(audy);
-            return cars.Count;
+            return cars;
         }
     }
 }

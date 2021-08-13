@@ -9,25 +9,7 @@ namespace DragRace
     {        
         private static void Main(string[] args)
         {
-            List<ICar> cars = new List<ICar>();
-
-            Mercedes mercee = new Mercedes("M", 0, 2);
-            cars.Add(mercee);
-
-            VolksWagen wagen = new VolksWagen("V", 0, 1);
-            cars.Add(wagen);
-
-            Tesla tesla = new Tesla("T", 0, 1);
-            cars.Add(tesla);
-
-            Lexus lexy = new Lexus("L", 0, 2);
-            cars.Add(lexy);
-
-            Bmw bamby = new Bmw("B", 0, 2);
-            cars.Add(bamby);
-
-            Audi audy = new Audi("A", 0, 2);
-            cars.Add(audy);
+            List<ICar> cars = Dragrace.MakeCarsList();
 
             Random rnd = new Random();
 
