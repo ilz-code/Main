@@ -1,15 +1,12 @@
-﻿using System;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
-    abstract class Animal
+    public abstract class Animal
     {
         public string _name;
         public double _weight;
         public int _foodEaten;        
 
-        public Animal()
-        { }
+        public Animal() { }
 
         public Animal(string name, double weight)
         {
@@ -18,16 +15,20 @@ namespace Hierarchy
             _foodEaten = 0;
         }
 
-        public virtual void MakeSound() { }
-
-        public virtual void Eat(Food food)
+        public virtual string MakeSound()
         {
-            _foodEaten = food.Quantity;
+            return "";
         }
 
-        public virtual void Output()
+        public virtual string Eat(Food food)
         {
-            Console.Write($" {_name} {_weight} ");
+            _foodEaten = food.Quantity;
+            return " " + food.Name + " " + food.Quantity;
+        }
+
+        public virtual string Output()
+        {
+            return $" {_name} {_weight} ";
         }
     }
 }

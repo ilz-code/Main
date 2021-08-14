@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
-    abstract class Mammal : Animal
+    public abstract class Mammal : Animal
     {
         public string _livingRegion;
 
@@ -11,16 +9,15 @@ namespace Hierarchy
             _livingRegion = livingRegion;
         }
 
-        public override void Eat(Food food)
+        public override string Eat(Food food)
         {
-            base.Eat(food);
-            Console.WriteLine(" " + food.Name + " " + food.Quantity);
+           return base.Eat(food);
         }
 
-        public override void Output()
+        public override string Output()
         {
             base.Output();
-            Console.Write(_livingRegion);
+            return _livingRegion;
         }
 
         public override string ToString()

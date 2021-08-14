@@ -1,22 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
-    abstract class Felime : Mammal
+    public abstract class Felime : Mammal
     {
         public Felime(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         { }
 
-        public override void Eat(Food food)
+        public override string Eat(Food food)
         {
-            base.Eat(food);
+            return base.Eat(food);
         }
 
-        public override void Output()
+        public override string Output()
         {
-            base.Output();
+            return base.Output();
         }
 
         public override string ToString()

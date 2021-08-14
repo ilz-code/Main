@@ -1,9 +1,8 @@
 ﻿namespace Hierarchy
 {
-    class Vegetables : Food
+    public class Vegetables : Food
     {       
-        public Vegetables()
-        { }
+        public Vegetables() { }
 
         public Vegetables(int quantity) : base(quantity)
         {

@@ -1,35 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
-    class Zebra : Mammal
+    public class Zebra : Mammal
     {
         public Zebra(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         { }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("\n Click");
+            return " Click";
         }
 
-        public override void Eat(Food food)
-        {            
+        public override string Eat(Food food)
+        {
+            string eat;
             if (food is Vegetables)
-                base.Eat(food);
+                eat = base.Eat(food);
             else
             {
-                base.Eat(food);
-                Console.WriteLine(" Zebras are not eating that type of food!");
+                eat = base.Eat(food) + " Zebras are not eating that type of food!";
                 _foodEaten = 0;
             }
+
+            return eat;
         }
 
-        public override void Output()
+        public override string Output()
         {
-            Console.Write("\n Zebra ");
-            base.Output();
+            return "\n Zebra " + base.Output();
         }
 
         public override string ToString()

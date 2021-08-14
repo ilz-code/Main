@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
-    class Cat : Felime
+   public class Cat : Felime
     {
         string _breed;
 
@@ -11,21 +9,19 @@ namespace Hierarchy
             _breed = breed;
         }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("\n Meoww");
+            return " Meoww";
         }
 
-        public override void Eat(Food food)
+        public override string Eat(Food food)
         {
-            base.Eat(food);
+            return base.Eat(food);
         }
 
-        public override void Output()
+        public override string Output()
         {
-            Console.Write("\n Cat ");
-            base.Output();
-            Console.Write(" " + _breed);
+            return "\n Cat " + base.Output() + " " + _breed;
         }
 
         public override string ToString()

@@ -1,33 +1,32 @@
-﻿using System;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
-    class Tiger : Felime
+    public class Tiger : Felime
     {
         public Tiger(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         { }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("\n Growl");
+            return " Growl";
         }
 
-        public override void Eat(Food food)
+        public override string Eat(Food food)
         {
+            string eat;
             if (food is Meat)
-                base.Eat(food);
+                eat = base.Eat(food);
             else
             {
-                base.Eat(food);
-                Console.WriteLine(" Tigers are not eating that type of food!");
                 _foodEaten = 0;
+                eat = base.Eat(food) + "\n Tigers are not eating that type of food!";
             }
+
+            return eat;
         }
 
-        public override void Output()
+        public override string Output()
         {
-            Console.Write("\n Tiger ");
-            base.Output();
+            return "\n Tiger " + base.Output();
         }
 
         public override string ToString()

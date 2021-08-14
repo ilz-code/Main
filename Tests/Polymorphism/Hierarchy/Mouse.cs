@@ -1,34 +1,32 @@
-﻿using System;
-
-namespace Hierarchy
+﻿namespace Hierarchy
 {
-    class Mouse : Mammal
+    public class Mouse : Mammal
     {
         public Mouse(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         { }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("\n Squeak");
+            return " Squeak";
         }
 
-        public override void Eat(Food food)
+        public override string Eat(Food food)
         {
-
+            string eat;
             if (food is Vegetables)
-                base.Eat(food);
+                eat = base.Eat(food);
             else
             {
-                base.Eat(food);
-                Console.WriteLine(" Mouses are not eating that type of food!");
+                eat = base.Eat(food) + " Mouses are not eating that type of food!";
                 _foodEaten = 0;
             }
+
+            return eat;
         }
 
-        public override void Output()
+        public override string Output()
         {
-            Console.Write("\n Mouse ");
-            base.Output();
+            return "\n Mouse " + base.Output();
         }
 
         public override string ToString()
