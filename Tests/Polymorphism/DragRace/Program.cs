@@ -7,8 +7,7 @@ namespace DragRace
     {        
         private static void Main(string[] args)
         {
-            List<ICar> cars = Dragrace.MakeCarsList();
-            Dragrace.Competition(cars);
+            Dragrace.Competition(Dragrace.MakeCarsList());
             Dragrace.Visualization();
             Dragrace.Results();
             Console.ReadKey();
