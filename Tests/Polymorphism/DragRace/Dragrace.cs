@@ -9,7 +9,6 @@ namespace DragRace
     {
         public static List<List<int>> carLoc = new List<List<int>>();
         public static List<Finisher> finishers = new List<Finisher>();
-        
 
         public static List<ICar> MakeCarsList()
         {

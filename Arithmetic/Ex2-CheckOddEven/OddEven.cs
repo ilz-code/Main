@@ -4,10 +4,7 @@
     {
         public static string IsOddOrEven(int number)
         {
-            if (number % 2 == 0)
-                return "Even Number";
-            else
-                return "Odd Number";
+            return number % 2 == 0 ? "Even Number" : "Odd Number";
         }
     }
 }

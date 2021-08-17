@@ -10,7 +10,6 @@ namespace DragRace
         public string Name { get; set; }
         public int Place { get; set; }
 
-
         public Audi(string name, int speed, int acceleration)
         {
             CurrentSpeed = speed;

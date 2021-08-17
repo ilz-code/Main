@@ -17,7 +17,6 @@ namespace Ex6_CozaLozaWozaTests
         [DataRow (25, " Loza")]
         [DataRow (14, " Woza")]
         [DataRow (17, " 17")]
-       
         public void CozaLoza_number_CozaLoza(int num, string output)
         {
             string result = Ex6_CozaLozaWoza.CozaLozaWoza.CozaLoza(num);

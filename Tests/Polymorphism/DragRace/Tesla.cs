@@ -17,6 +17,7 @@ namespace DragRace
             Name = name;
             Location = 0;
         }
+
         public void SpeedUp() 
         {
             CurrentSpeed += Acceleration;

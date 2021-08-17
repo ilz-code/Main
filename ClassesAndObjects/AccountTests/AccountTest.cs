@@ -10,7 +10,7 @@ namespace AccountTests
         Accounts tAccount = new Accounts("testAcc", 1000);
 
         [TestMethod]
-        public void Withdrawal_withdraw()
+        public void Withdrawal_ToWithdraw_Withdrawn()
         {
             double result = tAccount.Withdrawal(313);
             double expected = 313;
@@ -18,7 +18,7 @@ namespace AccountTests
         }
 
         [TestMethod]
-        public void Deposit_money()
+        public void Deposit_AmountDeposited_AccountTotal()
         {
             double result = tAccount.Deposit(250);
             double expected = 1250;
@@ -26,7 +26,7 @@ namespace AccountTests
         }
 
         [TestMethod]
-        public void Balance_string()
+        public void Balance_Account_BalanceAsString()
         {
             string result = tAccount.Balance();
             string expected = "testAcc: 1000";
