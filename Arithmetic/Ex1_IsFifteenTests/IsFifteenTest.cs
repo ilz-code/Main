@@ -12,10 +12,10 @@ namespace Ex1_IsFifteenTests
         [DataRow(11, 26, true)]
         [DataRow(11, 9, false)]
 
-        public void IsFifteen_twoNumbers_TrueIfIsFifteen(int a, int b, bool q)
+        public void IsFifteen_twoNumbersWhichAreFifteen_True(int a, int b, bool expect)
         {
-            bool ansver = Ex1_IsFifteen.Fifteen.IsFifteen(a, b);
-            Assert.AreEqual(q, ansver);
+            bool result = Ex1_IsFifteen.Fifteen.IsFifteen(a, b);
+            Assert.AreEqual(expect, result);
         }
     }
 }

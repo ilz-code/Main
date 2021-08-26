@@ -1,10 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace Ex2_CheckOddEvenTests
 {
     [TestClass]
-    public class CheckOddEven
+    public class CheckOddEvenTests
     {
         [DataTestMethod]
         [DataRow(12, "Even Number")]

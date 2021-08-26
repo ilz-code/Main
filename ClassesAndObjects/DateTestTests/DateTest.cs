@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using DateTest;
 
 namespace DateTestTests
@@ -14,6 +13,7 @@ namespace DateTestTests
         {
             string result = date.DisplayData();
             string expected = "11/08/2021";
+            Assert.AreEqual(expected, result);
         }
     }
 }

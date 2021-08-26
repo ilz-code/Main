@@ -9,7 +9,7 @@ namespace Products.Tests
         Product product = new Product("Display", 333, 4);
 
         [TestMethod]
-        public void PrintProduct_name_string()
+        public void PrintProduct_ProductName_ProductAsString()
         {
             string result = product.PrintProduct();
             string expected = "Display, price 333, amount 4";
@@ -17,7 +17,7 @@ namespace Products.Tests
         }
 
         [TestMethod]
-        public void ChangeQuantity_quantityChanges_amount()
+        public void ChangeQuantity_quantityChanges_NewAmount()
         {
             int result = product.ChangeQuantity(3);
             int expected = 7;
@@ -25,7 +25,7 @@ namespace Products.Tests
         }
 
         [TestMethod]
-        public void ChangePrice_priceChange_change()
+        public void ChangePrice_priceChange_NewPrice()
         {
             double result = product.ChangePrice(13);
             double expected = 346;

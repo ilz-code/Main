@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercise6
 {
@@ -22,7 +18,7 @@ namespace Exercise6
         {
             int[] secondArray = new int[10];
             for (int i = 0; i < 10; i++)
-            secondArray[i] = firstArray[i];
+                secondArray[i] = firstArray[i];
             return secondArray;
         }
 
@@ -30,11 +26,11 @@ namespace Exercise6
         {
             firstArray[9] = -7;
             return firstArray;
-        }        
+        }
 
         public static int FindElement(int[] firstArray, int ind)
         {
             return firstArray[ind];
-        }  
+        }
     }
 }

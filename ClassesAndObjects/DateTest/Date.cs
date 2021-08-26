@@ -17,7 +17,17 @@ namespace DateTest
 
         public string DisplayData()
         {
-            return $"{Day}/{Month}/{Year}";
+            string month ="";
+            if (Month < 10)
+                month = "0" + Convert.ToString(Month);
+            else
+                month = Convert.ToString(Month);
+            string day ="";
+            if (Day < 10)
+                day = "0" + Convert.ToString(Day);
+            else
+                day = Convert.ToString(Day);
+            return $"{day}/{month}/{Year}";
         }
     }
 }

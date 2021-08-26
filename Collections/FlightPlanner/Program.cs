@@ -6,7 +6,6 @@ namespace FlightPlanner
 {
     class Program
     {
-
         private static void Main(string[] args)
         {
             string Path = "..\\..\\flights.txt";
@@ -39,5 +38,4 @@ namespace FlightPlanner
             Console.ReadKey();
         }
     }
-
 }

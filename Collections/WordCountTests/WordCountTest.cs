@@ -9,7 +9,7 @@ namespace WordCountTests
         private string tex = "One two three\nfour five six";
 
         [TestMethod]
-        public void CountLines_string()
+        public void CountLines_String_NumberOfLines()
         {
             string result = CountWords.CountLines(tex);
             string expected = "Lines = 2";
@@ -17,7 +17,7 @@ namespace WordCountTests
         }
 
         [TestMethod]
-        public void CountWord_string()
+        public void CountWord_String_NumberOfWords()
         {
             string result = CountWords.CountWord(tex);
             string expected = "Words = 6";
@@ -25,7 +25,7 @@ namespace WordCountTests
         }
 
         [TestMethod]
-        public void CountChars_string()
+        public void CountChars_String_NumberOfChars()
         {
             string result = CountWords.CountChars(tex);
             string expected = "Chars = 22";
