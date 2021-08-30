@@ -1,13 +1,17 @@
-﻿using System;
-
-namespace Account
+﻿namespace Account
 {
-    class Account
+    public class Accounts
     {
         private string _name;
         private double _money;
 
-        public Account(string v1, double v2)
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
+
+        public Accounts(string v1, double v2)
         {           
             _name = v1;
             _money = v2;
@@ -19,25 +23,20 @@ namespace Account
             return i;
         }
 
-        public void Deposit(double i)
+        public double Deposit(double i)
         {
-            _money += i;                       
+            _money += i;
+            return _money;
         }
 
-        public void Balance()
+        public string Balance()
         {
-           Console.WriteLine(ToString());
+           return ToString();
         }
 
         public override string ToString()
         {
             return $"{_name}: {_money}";
-        }
-
-        public string Name
-        {
-            get => _name;
-            set => _name = value;
         }
     }
 }

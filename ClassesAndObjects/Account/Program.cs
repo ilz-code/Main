@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Account
 {
@@ -10,37 +6,37 @@ namespace Account
     {
         private static void Main(string[] args)
         {
-            var firstAccount = new Account("First account", 100.00);
+            var firstAccount = new Accounts("First account", 100.00);
             firstAccount.Deposit(20);
-            firstAccount.Balance();
+            Console.WriteLine(firstAccount.Balance());
 
-            var mat = new Account("Matt's account", 1000);
-            var my = new Account("My account", 0);
+            var mat = new Accounts("Matt's account", 1000);
+            var my = new Accounts("My account", 0);
             mat.Withdrawal(100);
             my.Deposit(100);
-            mat.Balance();
-            my.Balance();
+            Console.WriteLine(mat.Balance());
+            Console.WriteLine(my.Balance());
 
-            var aAccount = new Account("A account", 100.00);
-            var bAccount = new Account("B account", 0);
-            var cAccount = new Account("C Account", 0);
+            var aAccount = new Accounts("A account", 100.00);
+            var bAccount = new Accounts("B account", 0);
+            var cAccount = new Accounts("C Account", 0);
             Console.WriteLine("Initial state");
-            aAccount.Balance();
-            bAccount.Balance();
-            cAccount.Balance();
+            Console.WriteLine(aAccount.Balance());
+            Console.WriteLine(bAccount.Balance());
+            Console.WriteLine(cAccount.Balance());
             aAccount.Name = "GGGG";
             Transfer(aAccount, bAccount, 50.0);
             Transfer(bAccount, cAccount, 25.0);
 
             Console.WriteLine("Final state");
-            aAccount.Balance();
-            bAccount.Balance();
-            cAccount.Balance();
+            Console.WriteLine(aAccount.Balance());
+            Console.WriteLine(bAccount.Balance());
+            Console.WriteLine(cAccount.Balance());
 
             Console.ReadKey();
         }
 
-        public static void Transfer(Account from, Account to, double howMuch)
+        public static void Transfer(Accounts from, Accounts to, double howMuch)
         {
             to.Deposit(from.Withdrawal(howMuch));
         }

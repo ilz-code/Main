@@ -8,10 +8,7 @@ namespace Ex2_CheckOddEven
         {
             Console.WriteLine("Please enter a number");
             int number = Convert.ToInt32(Console.ReadLine());
-            if (number % 2 == 0)
-                Console.WriteLine("Even Number");
-            else
-                Console.WriteLine("Odd Number");
+            Console.WriteLine(OddEven.IsOddOrEven(number));
             Console.WriteLine("bye!");
             Console.ReadKey();
         }

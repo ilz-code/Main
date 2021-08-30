@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Products
 {
@@ -17,9 +13,9 @@ namespace Products
             mouse.ChangeQuantity(-5);
             iPhone.ChangePrice(-100);
 
-            mouse.PrintProduct();
-            iPhone.PrintProduct();
-            epson.PrintProduct();
+            Console.WriteLine(mouse.PrintProduct());
+            Console.WriteLine(iPhone.PrintProduct());
+            Console.WriteLine(epson.PrintProduct());
 
             Console.ReadKey();
         }
